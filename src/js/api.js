@@ -42,16 +42,13 @@ function apiService() {
   const getQuery = () => {
     return service.searchQuery;
   };
-
-  const setQuery = (newQuery) => {
+  const setQuery = newQuery => {
     service.searchQuery = newQuery;
     resetPage();
   };
-
-  const getPage = (currentPage) => {
+  const getPage = currentPage => {
     service.page = currentPage;
   };
-
   return {
     fetchGallery,
     incrementPage,
